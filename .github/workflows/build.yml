@@ -24,6 +24,12 @@ jobs:
         distribution: 'temurin'
         java-version: '17'
 
+    - name: Set up Flutter
+      uses: subosito/flutter-action@v2
+      with:
+        channel: 'stable'
+        cache: true
+
     - name: Accept Android SDK Licenses
       run: |
         yes | sdkmanager --licenses || true
@@ -35,7 +41,7 @@ jobs:
 
     - name: Build APK
       run: |
-        flet build apk --python-version 3.12 -vv
+        flet build apk --python-version 3.12 -vv --yes
 
     - name: Upload APK Artifact
       uses: actions/upload-artifact@v4
