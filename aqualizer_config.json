@@ -1,0 +1,19 @@
+{
+  "gains": [
+    5.0,
+    4.0,
+    1.0,
+    0.0,
+    -2.0,
+    2.0,
+    1.0,
+    2.0,
+    4.0,
+    5.0
+  ],
+  "bass": 0.0,
+  "stereo": 0.0,
+  "enabled": true,
+  "preset": "Electronic",
+  "custom_presets": {}
+}

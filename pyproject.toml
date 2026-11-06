@@ -1,0 +1,18 @@
+[project]
+name = "aqualizer"
+version = "1.0.0"
+requires-python = ">=3.12"
+dependencies = ["flet==1.1.0"]
+
+[tool.flet]
+product = "Aqualizer"
+org = "com.ar023"
+
+[tool.flet.app]
+module = "Aqualizer.py"
+
+[tool.flet.android]
+dependencies = ["pyjnius"]
+
+[tool.flet.android.permission]
+"android.permission.MODIFY_AUDIO_SETTINGS" = true
